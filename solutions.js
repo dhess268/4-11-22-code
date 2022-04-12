@@ -12,7 +12,16 @@ function sameCase(a, b){
     }
     return -1
   }
-  
-  function isLetter(str) {
+// Checks if string input is a letter!
+function isLetter(str) {
     return str.length === 1 && str.match(/[a-z]/i);
-  }
+}
+
+
+
+// Tests if a score is better than
+function betterThanAverage(classPoints, yourPoints) {
+classPoints.push(yourPoints)
+return yourPoints > classPoints.reduce(((acc, current) => acc + current), 0) / classPoints.length
+}
+
