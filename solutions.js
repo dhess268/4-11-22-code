@@ -25,3 +25,26 @@ classPoints.push(yourPoints)
 return yourPoints > classPoints.reduce(((acc, current) => acc + current), 0) / classPoints.length
 }
 
+
+
+
+// Reversed the inputted string can also use .split('')
+function solution(str){
+    return Array.from(str).reverse().join('')
+}
+
+
+// Reverses the space separated string
+function reverseWords(str){
+    return str.split(' ').reverse().join(' ')
+  }
+
+// Based on that funny problem
+function howManyLightsabersDoYouOwn(name) {
+if(name === 'Zach'){
+    return 18
+}
+else{
+    return 0
+}
+} 
